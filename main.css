@@ -232,13 +232,7 @@ hr {
   width: 100%;
   height: auto;
 }
- @media only screen and (max-width: 1000px) {
-  .container {
-    width: 60%;
-  }
-  .menu-panel {
-    width: 70%;
-  }
+
 @media only screen and (max-width: 700px) {
   .container {
     width: 100%;
@@ -246,13 +240,7 @@ hr {
   .menu-panel {
     width: 75%;
   }
-  @media only screen and (max-width: 900px) {
-  .container {
-    width: 60%;
-  }
-  .menu-panel {
-    width: 70%;
-  }
+
 
   /* Next & previous buttons */
 
