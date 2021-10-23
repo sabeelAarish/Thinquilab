@@ -232,6 +232,7 @@ hr {
   }
   .menu-panel {
     width: 75%;
+    height:100vh;
   }
 
   /* Next & previous buttons */
