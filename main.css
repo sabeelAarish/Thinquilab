@@ -82,8 +82,21 @@ body {
 }
 #slide0 {
   display: block;
+  height: 100vh;
 }
+#slide1 {
+  height: 100vh;
 
+
+}
+#slide3 {
+  height: 100vh;
+  
+}
+#slide7 {
+  height: 100vh;
+  
+}
 /* Next & previous buttons */
 .prev,
 .next {
