@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap");
+
+body {
+  background-image: url("./media/pic1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 35%;
+  min-height: 100vh;
+  margin: auto;
+  padding-bottom: 0px;
+  background-color: rgb(0, 0, 0);
+}
+.menu-panel {
+  width: 20%;
+  min-height: 100vh;
+  background-color: rgb(10, 10, 10);
+  position: absolute;
+  z-index: 150;
+
+  display: none;
+}
+
+.menu-link {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close-menu {
+  margin-left: 90%;
+  cursor: pointer;
+}
+.fa-times:hover {
+  color: #eb3d10;
+}
+.fa-times {
+  color: white;
+  margin-top: 10px;
+}
+.menu-box {
+  margin-top: 30px;
+  margin-left: -20px;
+  list-style-type: none;
+}
+.menu-box li {
+  padding-top: 25px;
+}
+.menu-link:hover {
+  color: #eb3d10;
+}
+hr {
+  border: 1px solid white;
+  margin-right: 100%;
+
+  width: 200px;
+}
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  margin: auto;
+  height: 120px;
+  background-image: url("./media/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -50px;
+}
+.home-logo:hover {
+  cursor: pointer;
+}
+.header:hover {
+  cursor: pointer;
+}
+.fa-bars {
+  font-size: 24px;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 120;
+}
+.txt {
+  color: white;
+  line-height: 22px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+.slide-content {
+  padding: 0px 25px 20px 40px;
+}
+.team-pic {
+  width: 120px;
+  margin: auto;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  background-color: white;
+}
+.team-member {
+  color: #eb3d10;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Raleway-thin", sans-serif;
+  text-align: center;
+}
+.designation {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: "Raleway-thin", sans-serif;
+  text-align: center;
+  margin-top: -15px;
+}
+
+/**Slider CSS***/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+#slide0 {
+  display: block;
+  height: 100vh;
+}
+#slide1 {
+  height: 100vh;
+}
+#slide3 {
+  height: 100vh;
+}
+#slide7 {
+  height: 100vh;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 30%;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 30%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 1px solid grey;
+}
+
+.active,
+.dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#slide0,
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6 {
+  width: 100%;
+  height: auto;
+}
+/*--cover up mac , mac-book---*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+  .container {
+    width: 35%;
+  }
+  .menu-panel {
+    width: 23%;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 30%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 30%;
+  }
+}
+
+/** Ipad Responsive ****/
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    width: 75%;
+  }
+  .menu-panel {
+    width: 40%;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 10%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 10%;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/*Mobile -  Portrait - Iphone10 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .container {
+    width: 100%;
+  }
+  .menu-panel {
+    width: 70%;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+  }
+}
